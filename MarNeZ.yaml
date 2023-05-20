@@ -1,1 +1,112 @@
+proxies:
+
+- name: HE1 17
+  server: 104.21.8.121
+  port: 443
+  type: trojan
+  password: df6a5e80-f495-11ed-aff5-1239d0255272
+  skip-cert-verify: true
+  sni: sg1-trojan.bonds.id
+  network: ws
+  ws-opts:
+    path: /howdy
+    headers:
+      Host: sg1-trojan.bonds.id
+      
+      
+      
+      
+       
+- name: MELBI 17
+  server: 104.21.8.121
+  port: 443
+  type: trojan
+  password: 10b78a20-f496-11ed-b360-1239d0255272
+  skip-cert-verify: true
+  sni: sg-4.test3.net
+  network: ws
+  ws-opts:
+    path: /howdy
+    headers:
+      Host: sg-4.test3.net
+
+
+      
+
+
+- name: HE1 19
+  server: 172.67.139.111
+  port: 443
+  type: trojan
+  password: e637ebc0-f636-11ed-9c34-1239d0255272
+  skip-cert-verify: true
+  sni: sg1-trojan.bonds.id
+  network: ws
+  ws-opts:
+    path: /howdy
+    headers:
+      Host: sg1-trojan.bonds.id
+      
+
+      
+       
+- name: MELBI 19
+  server: 172.67.139.111
+  port: 443
+  type: trojan
+  password: 0bfa9aa0-f637-11ed-8cf9-1239d0255272
+  skip-cert-verify: true
+  sni: sg-4.test3.net
+  network: ws
+  ws-opts:
+    path: /howdy
+    headers:
+      Host: sg-4.test3.net
+      
+      
+- name: TUDF 19
+  server: 172.67.139.111
+  port: 443
+  type: trojan
+  password: f463f200-f661-11ed-8c50-1239d0255272
+  skip-cert-verify: true
+  sni: trojan3.udpgw.com
+  network: ws
+  ws-opts:
+    path: /howdy
+    headers:
+      Host: trojan3.udpgw.com
+
+- name: VUDF 19
+  server: 172.67.139.111
+  port: 443
+  type: vmess
+  uuid: 8ec9d1f9-f5e9-4f72-b96e-3f2a0f7a5899
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray3.udpgw.com
+  network: ws
+  ws-opts:
+    path: /vmws
+    headers:
+      Host: v2ray3.udpgw.com
+  udp: true
+
+- name: TAHU
+  server: beacon.liveon.id
+  port: 443
+  type: trojan
+  password: 6d250a4a-0cc2-410b-a69d-eb9b218c22fe
+  skip-cert-verify: true
+  sni: biznet12.nextvpn.cc
+  network: ws
+  ws-opts:
+    path: /vpnneo
+    headers:
+      Host: biznet12.nextvpn.cc
+      
+      
+      
 
