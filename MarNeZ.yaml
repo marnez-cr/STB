@@ -77,7 +77,7 @@ proxies:
     headers:
       Host: trojan3.udpgw.com
 
-- name: VUDF 19
+- name: VUDF 19 Tes
   server: 172.67.139.111
   port: 443
   type: vmess
