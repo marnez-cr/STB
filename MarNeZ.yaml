@@ -3,10 +3,109 @@ proxies:
 ######## MARNEZ CONFIG ##########
 ########       TROJAN           ##########
 
+  
 ########        VMESS           ##########
+- name: id1cf
+  server: 104.22.5.240 
+  port: 443
+  type: vless
+  uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: id1.tingkehvpn.my.id
+  network: ws
+  ws-opts:
+    path: /vlesscf
+    headers:
+      Host: id1.tingkehvpn.my.id
+  udp: true
+  
+- name: vlalb
+  server: 104.22.5.240 
+  port: 443
+  type: vless
+  uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg-alibaba.tingkehvpn.my.id
+  network: ws
+  ws-opts:
+    path: /vlesscf
+    headers:
+      Host: sg-alibaba.tingkehvpn.my.id
+  udp: true
+  
+- name: vlaws
+  server: 172.67.5.14 
+  port: 443
+  type: vless
+  uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg-aws.tingkehvpn.my.id
+  network: ws
+  ws-opts:
+    path: /vlesscf
+    headers:
+      Host: sg-aws.tingkehvpn.my.id
+  udp: true
+  
+- name: vlsDo
+  server: go.appannie.com 
+  port: 443
+  type: vless
+  uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg-do.tingkehvpn.my.id
+  network: ws
+  ws-opts:
+    path: /vlesscf
+    headers:
+      Host: sg-do.tingkehvpn.my.id
+  udp: true
+  
+- name: vlsovh
+  server: quiz.staging.vidio.com 
+  port: 443
+  type: vless
+  uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg-ovh.tingkehvpn.my.id
+  network: ws
+  ws-opts:
+    path: /vlesscf
+    headers:
+      Host: sg-ovh.tingkehvpn.my.id
+  udp: true
+  
+  
+- name: vlsovh80
+  server: quiz.vidio.com 
+  port: 80
+  type: vless
+  uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  servername: sg-ovh.tingkehvpn.my.id
+  network: ws
+  ws-opts:
+    path: /vlesscf
+    headers:
+      Host: sg-ovh.tingkehvpn.my.id
+  udp: true
+  
+
 
 #######           VLESS            ##########
-- name: MEDoX
+- name: MEDO
   server: quiz.staging.vidio.com 
   port: 443
   type: vless
@@ -23,7 +122,7 @@ proxies:
   udp: true
   
   
-- name: IDGCPX
+- name: IDGCP
   server: quiz.int.vidio.com 
   port: 443
   type: vless
@@ -39,7 +138,7 @@ proxies:
       Host: id1.tingkehvpn.my.id
   udp: true
   
-- name: SGDOx
+- name: SGDO
   server: 104.22.5.240 
   port: 443
   type: vless
@@ -55,7 +154,7 @@ proxies:
       Host: sg-do.tingkehvpn.my.id
   udp: true
 
-- name: SGAWSx
+- name: SGAWS
   server: 104.22.4.240 
   port: 443
   type: vless
@@ -72,6 +171,21 @@ proxies:
   udp: true
   
   
+- name: SGALB
+  server: 172.67.5.14 
+  port: 443
+  type: vless
+  uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg-alibaba.tingkehvpn.my.id
+  network: ws
+  ws-opts:
+    path: /vlesscf
+    headers:
+      Host: sg-alibaba.tingkehvpn.my.id
+  udp: true
   
   
 - name: SAKISG1x
@@ -92,7 +206,7 @@ proxies:
   
   
   
-- name: SBSSGx
+- name: SBSSG
   server: go.appannie.com
   port: 443
   type: vless
@@ -108,7 +222,7 @@ proxies:
       Host: sg.vless.sbs
   udp: true
   
-- name: IDVLCx
+- name: IDVLC
   server: nontontv.vidio.com
   port: 443
   type: vless
@@ -124,8 +238,23 @@ proxies:
       Host: id.vlcfpages.my.id
   udp: true
   
+- name: SGVLC
+  server: 104.22.4.240
+  port: 443
+  type: vless
+  uuid: f69a85fe-4a6e-40f3-bcd0-f3c800388b58
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg.vlcfpages.my.id
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: sg.vlcfpages.my.id
+  udp: true
   
-- name: USVLCx
+- name: USVLC
   server: quiz.int.vidio.com
   port: 443
   type: vless
@@ -140,5 +269,4 @@ proxies:
     headers:
       Host: us.vlcfpages.my.id
   udp: true
-
   
