@@ -1,112 +1,144 @@
 proxies:
 
-- name: HE1 17
-  server: 104.21.8.121
-  port: 443
-  type: trojan
-  password: df6a5e80-f495-11ed-aff5-1239d0255272
-  skip-cert-verify: true
-  sni: sg1-trojan.bonds.id
-  network: ws
-  ws-opts:
-    path: /howdy
-    headers:
-      Host: sg1-trojan.bonds.id
-      
-      
-      
-      
-       
-- name: MELBI 17
-  server: 104.21.8.121
-  port: 443
-  type: trojan
-  password: 10b78a20-f496-11ed-b360-1239d0255272
-  skip-cert-verify: true
-  sni: sg-4.test3.net
-  network: ws
-  ws-opts:
-    path: /howdy
-    headers:
-      Host: sg-4.test3.net
+######## MARNEZ CONFIG ##########
+########       TROJAN           ##########
 
+########        VMESS           ##########
 
-      
-
-
-- name: HE1 19
-  server: 172.67.139.111
+#######           VLESS            ##########
+- name: MEDoX
+  server: quiz.staging.vidio.com 
   port: 443
-  type: trojan
-  password: e637ebc0-f636-11ed-9c34-1239d0255272
-  skip-cert-verify: true
-  sni: sg1-trojan.bonds.id
-  network: ws
-  ws-opts:
-    path: /howdy
-    headers:
-      Host: sg1-trojan.bonds.id
-      
-
-      
-       
-- name: MELBI 19
-  server: 172.67.139.111
-  port: 443
-  type: trojan
-  password: 0bfa9aa0-f637-11ed-8cf9-1239d0255272
-  skip-cert-verify: true
-  sni: sg-4.test3.net
-  network: ws
-  ws-opts:
-    path: /howdy
-    headers:
-      Host: sg-4.test3.net
-      
-      
-- name: TUDF 19
-  server: 172.67.139.111
-  port: 443
-  type: trojan
-  password: f463f200-f661-11ed-8c50-1239d0255272
-  skip-cert-verify: true
-  sni: trojan3.udpgw.com
-  network: ws
-  ws-opts:
-    path: /howdy
-    headers:
-      Host: trojan3.udpgw.com
-
-- name: VUDF 19 Tes
-  server: 172.67.139.111
-  port: 443
-  type: vmess
-  uuid: 8ec9d1f9-f5e9-4f72-b96e-3f2a0f7a5899
-  alterId: 0
+  type: vless
+  uuid: b4920d77-f311-4360-af51-e348fb222de7
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: v2ray3.udpgw.com
+  servername: marnezvx.pages.dev
   network: ws
   ws-opts:
-    path: /vmws
+    path: /?ed=2048
     headers:
-      Host: v2ray3.udpgw.com
+      Host: marnezvx.pages.dev
+  udp: true
+  
+  
+- name: IDGCPX
+  server: quiz.int.vidio.com 
+  port: 443
+  type: vless
+  uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: id1.tingkehvpn.my.id
+  network: ws
+  ws-opts:
+    path: /vlesscf
+    headers:
+      Host: id1.tingkehvpn.my.id
+  udp: true
+  
+- name: SGDOx
+  server: 104.22.5.240 
+  port: 443
+  type: vless
+  uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg-do.tingkehvpn.my.id
+  network: ws
+  ws-opts:
+    path: /vlesscf
+    headers:
+      Host: sg-do.tingkehvpn.my.id
   udp: true
 
-- name: TAHU
-  server: beacon.liveon.id
+- name: SGAWSx
+  server: 104.22.4.240 
   port: 443
-  type: trojan
-  password: 6d250a4a-0cc2-410b-a69d-eb9b218c22fe
+  type: vless
+  uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
+  cipher: auto
+  tls: true
   skip-cert-verify: true
-  sni: biznet12.nextvpn.cc
+  servername: sg-aws.tingkehvpn.my.id
   network: ws
   ws-opts:
-    path: /vpnneo
+    path: /vlesscf
     headers:
-      Host: biznet12.nextvpn.cc
-      
-      
-      
+      Host: sg-aws.tingkehvpn.my.id
+  udp: true
+  
+  
+  
+  
+- name: SAKISG1x
+  server: nontontv.vidio.com
+  port: 443
+  type: vless
+  uuid: fccdaaae-af39-41a7-9fde-fd32a48278cf
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg1.sakhi.my.id
+  network: ws
+  ws-opts:
+    path: /bejir
+    headers:
+      Host: sg1.sakhi.my.id
+  udp: true
+  
+  
+  
+- name: SBSSGx
+  server: go.appannie.com
+  port: 443
+  type: vless
+  uuid: 47f5ab29-37cb-4f1a-8638-765c59774836
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg.vless.sbs
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: sg.vless.sbs
+  udp: true
+  
+- name: IDVLCx
+  server: nontontv.vidio.com
+  port: 443
+  type: vless
+  uuid: 0bc51b14-02aa-40db-aeba-8a9569a7244d
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: id.vlcfpages.my.id
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: id.vlcfpages.my.id
+  udp: true
+  
+  
+- name: USVLCx
+  server: quiz.int.vidio.com
+  port: 443
+  type: vless
+  uuid: 281b9b43-e288-4b2e-80c0-a6e2316298b4
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: us.vlcfpages.my.id
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: us.vlcfpages.my.id
+  udp: true
 
+  
